@@ -1,0 +1,90 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.9999923982965437 -0.0034187379741902947 -0.0018749879440580139 5.279882570230386
+  position 1.3351822219800216 9.032601096079905 5.6001310172246885
+  follow "Pioneer 3-DX"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 5 5
+  floorTileSize 0.4 0.4
+  wallHeight 0.4
+}
+Wall {
+  translation -0.8 0 -1.65
+  size 1.8 0.4 0.1
+}
+Wall {
+  translation -2 0 0.1
+  name "wall(6)"
+  size 1 0.4 0.4
+}
+Wall {
+  translation -1.2 0 -0.87
+  name "wall(7)"
+  size 1 0.4 0.1
+}
+Wall {
+  translation -0.7 0 0.08
+  rotation 0 1 0 1.57
+  name "wall(3)"
+  size 2 0.4 0.1
+}
+Wall {
+  translation 1.5 0 -0.28
+  rotation 0 1 0 1.57
+  name "wall(5)"
+  size 1.2 0.4 0.4
+}
+Wall {
+  translation 0.1 0 -0.9
+  rotation 0 1 0 1.57
+  name "wall(4)"
+  size 1.6 0.4 0.1
+}
+Wall {
+  translation 1.9 0 -1.7
+  name "wall(2)"
+  size 1.2 0.4 0.1
+}
+Wall {
+  translation -0.84 0 1.41
+  rotation 0 1 0 -0.349
+  name "wall(10)"
+  size 1.8 0.4 0.05
+}
+Wall {
+  translation 0.84 0 1.40664
+  rotation 0 1 0 0.349
+  name "wall(12)"
+  size 1.8 0.4 0.05
+}
+Wall {
+  translation 0 0 1.1
+  name "wall(1)"
+  size 3.4 0.4 0.05
+}
+Pioneer3dx {
+  translation -2.2 0.0975 -2.15
+  rotation 0 1 0 -1.57
+  controller "MyAssignmentController"
+  supervisor TRUE
+  extensionSlot [
+    Display {
+      name "occupancyGridDisplay"
+      width 500
+      height 500
+    }
+    Display {
+      name "sensorDisplay"
+      width 500
+      height 500
+    }
+  ]
+}
